@@ -37,17 +37,17 @@ jobs:
       - run:
           name: Build kernel
           command: |
-            make V=4 -j$(nproc) O=out CC=clang-10 LD=aarch64-linux-gnu-ld.bfd
+            make -j$(nproc) O=out CC=clang-10 LD=aarch64-linux-gnu-ld.bfd
 
       - persist_to_workspace:
           root: out
           paths:
-            - arch/arm64/boot/Image
+            - arch/arm64/boot/Image.gz-dtb
             
 
       - store_artifacts:
-          path: out/arch/arm64/boot/Image
-          destination: Image
+          path: out/arch/arm64/boot/Image.gz-dtb
+          destination: Image.gz-dtb
 
 workflows:
   build:
