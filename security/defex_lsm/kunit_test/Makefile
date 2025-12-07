@@ -1,0 +1,15 @@
+obj-y += defex_common_test.o
+obj-y += defex_main_test.o
+obj-y += defex_sign_test.o
+obj-y += defex_sysfs_test.o
+obj-y += defex_ht_test.o
+obj-y += defex_debug_test.o
+obj-y += defex_caches_test.o
+obj-y += defex_get_mode_test.o
+obj-y += defex_lsm_test.o
+obj-y += defex_catch_list_test.o
+obj-y += defex_catch_list_compat_test.o
+obj-y += defex_immutable_test.o
+obj-y += defex_safeplace_test.o
+obj-y += defex_rules_test.o
+obj-y += defex_priv_test.o
